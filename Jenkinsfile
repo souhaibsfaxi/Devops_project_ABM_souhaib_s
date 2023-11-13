@@ -27,16 +27,16 @@ pipeline {
                 sh 'mvn clean'
             }
         }
-    // stage('Compile'){
-    //         steps{
-    //             sh 'mvn compile'
-    //         }
-    //     }
-    // stage('Mockito Tests') {
-    //  steps {
-    //   sh 'mvn test'
-    //     }
-    //     }
+    stage('Compile'){
+            steps{
+                sh 'mvn compile'
+            }
+        }
+    stage('Mockito Tests') {
+     steps {
+      sh 'mvn test'
+        }
+        }
     // stage('Quality test SONARQUBE') {
     //   steps {
     //     sh 'mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=devops'
