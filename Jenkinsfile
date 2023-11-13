@@ -37,11 +37,11 @@ pipeline {
       sh 'mvn test'
         }
         }
-    // stage('Quality test SONARQUBE') {
-    //   steps {
-    //     sh 'mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=devops'
-    //   }
-    // }
+    stage('Quality test SONARQUBE') {
+      steps {
+        sh 'mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=Couragesou1.'
+      }
+    }
    
     // stage('Deploy artifact with Nexus') {
     //   steps {
