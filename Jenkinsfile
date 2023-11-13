@@ -22,11 +22,11 @@ pipeline {
       }
      
     }
-    // stage('Clean Build'){
-    //         steps{
-    //             sh 'mvn clean'
-    //         }
-    //     }
+    stage('Clean Build'){
+            steps{
+                sh 'mvn clean'
+            }
+        }
     // stage('Compile'){
     //         steps{
     //             sh 'mvn compile'
