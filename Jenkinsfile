@@ -43,11 +43,11 @@ pipeline {
       }
     }
    
-    // stage('Deploy artifact with Nexus') {
-    //   steps {
-    //     sh 'mvn deploy -DskipTests'
-    //   }
-    // }
+     stage('Deploy artifact with Nexus') {
+       steps {
+         sh 'mvn deploy -DskipTests'
+       }
+     }
     
     // stage('Docker build'){
     //  steps{
