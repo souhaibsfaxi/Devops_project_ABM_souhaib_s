@@ -52,16 +52,16 @@ pipeline {
     
      stage('Docker build'){
       steps{
-       sh 'docker build -t souhaibsfaxi/souhaibdevopsb:spring --network host .'
+       sh 'docker build -t souhaibsfaxi/souhaibdevops:spring --network host .'
       }
      }
 
-    // stage('Docker push image'){
-    //  steps{
-    //   sh 'docker login -u samarcherni -p Handsoff2021'
-    //   sh 'docker push samarcherni/samardevopsb:spring'
-    //  }
-    // }
+     stage('Docker push image'){
+      steps{
+       sh 'docker login -u sou1111 -p Couragesou1.'
+       sh 'docker push souhaibsfaxi/samardevops:spring'
+      }
+     }
     // stage('Docker-Compose Deploying'){
     //   steps{
 
