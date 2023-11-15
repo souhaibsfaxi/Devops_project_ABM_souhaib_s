@@ -62,12 +62,12 @@ pipeline {
        sh 'docker push sou1111/souhaibdevops:spring'
       }
      }
-    // stage('Docker-Compose Deploying'){
-    //   steps{
+     stage('Docker-Compose Deploying'){
+       steps{
 
-    //     sh 'docker compose up -d --remove-orphans'
-    //   }
-    // }
+         sh 'docker compose up -d --remove-orphans'
+       }
+     }
     //   stage('Prometheus Grafana'){
     //   steps{
 
