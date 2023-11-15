@@ -50,11 +50,11 @@ pipeline {
        }
      }
     
-    // stage('Docker build'){
-    //  steps{
-    //   sh 'docker build -t samarcherni/samardevopsb:spring --network host .'
-    //  }
-    // }
+     stage('Docker build'){
+      steps{
+       sh 'docker build -t souhaibsfaxi/souhaibdevopsb:spring --network host .'
+      }
+     }
 
     // stage('Docker push image'){
     //  steps{
