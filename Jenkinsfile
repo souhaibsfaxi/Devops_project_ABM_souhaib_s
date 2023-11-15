@@ -33,11 +33,11 @@ pipeline {
             }
         }
 
-    //stage('Mockito Tests') {
-     //steps {
-      //sh 'mvn test'
-      //  }
-       // }
+    stage('Mockito Tests') {
+     steps {
+      sh 'mvn test'
+        }
+        }
     stage('Quality test SONARQUBE') {
       steps {
         sh 'mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=Couragesou1.'
