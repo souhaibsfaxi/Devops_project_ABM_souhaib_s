@@ -59,7 +59,7 @@ pipeline {
      stage('Docker push image'){
       steps{
        sh 'docker login -u sou1111 -p Couragesou1.'
-       sh 'docker push souhaibsfaxi/samardevops:spring'
+       sh 'docker push souhaibsfaxi/souhaibdevops:spring'
       }
      }
     // stage('Docker-Compose Deploying'){
