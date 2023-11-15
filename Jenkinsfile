@@ -52,14 +52,14 @@ pipeline {
     
      stage('Docker build'){
       steps{
-       sh 'docker build -t souhaibsfaxi/souhaibdevops:spring --network host .'
+       sh 'docker build -t sou1111/souhaibdevops:spring --network host .'
       }
      }
 
      stage('Docker push image'){
       steps{
        sh 'docker login -u sou1111 -p Couragesou1.'
-       sh 'docker push souhaibsfaxi/souhaibdevops:spring'
+       sh 'docker push sou1111/souhaibdevops:spring'
       }
      }
     // stage('Docker-Compose Deploying'){
