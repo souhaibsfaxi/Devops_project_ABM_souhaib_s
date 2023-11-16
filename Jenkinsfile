@@ -68,18 +68,18 @@ pipeline {
          sh 'docker compose up -d --remove-orphans'
        }
      }
-    //   stage('Prometheus Grafana'){
-    //   steps{
+       stage('Prometheus Grafana'){
+       steps{
 
-    //     echo 'doneeeee'
-    //   }
-    // }        
-    // stage('Email Notification') {
-    //         steps {
-    //             script {
-    //                 currentBuild.resultIsBetterOrEqualTo('SUCCESS') ? notifySuccess() : notifyFailure()
-    //             }
-    //         }
-    //     }
+         echo 'done'
+       }
+     }
+     stage('Email Notification') {
+             steps {
+                 script {
+                     currentBuild.resultIsBetterOrEqualTo('SUCCESS') ? notifySuccess() : notifyFailure()
+                 }
+             }
+         }
 }
 }
