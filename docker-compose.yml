@@ -13,6 +13,9 @@ services:
     networks:
       - network1
   spring:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: sou1111/souhaibdevops:spring
     restart: on-failure
     ports:
